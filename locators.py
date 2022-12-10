@@ -3,7 +3,10 @@ from selenium.webdriver.common.by import By
 
 class TestLocators:
     BUTTON_LOG_IN_ON_HOME_PAGE = By.XPATH, './/button[@class = "button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_large__G21Vg"]'  # "Войти в аккаунт" на главной
-    BUTTON_PERSONAL_ACCOUNT_ON_HOME_PAGE = By.XPATH, './/a[@href = "/account"]'  # "Личный кабинет" на главной
+    BUTTON_PERSONAL_ACCOUNT_ON_HOME_PAGE = By.XPATH, './/a[@href="/account"]'  # "Личный кабинет" на главной
+    BUTTON_CONSTRUCTOR_ON_HEADER = \
+        By.XPATH, './/p[@class="AppHeader_header__linkText__3q_va ml-2" and text()="Конструктор"]' # "Конструктор" в хедере
+    LOGO_ON_HEADER = By.XPATH, './/div[@class="AppHeader_header__logo__2D0X2"]' # Логотип в хедере
 
     INPUT_EMAIL_ON_LOGIN_FORM = By.XPATH, './/input[@type="text"]'  # "Email" на форме входа
     INPUT_PASSWORD_ON_LOGIN_FORM = By.XPATH, './/input[@type="password"]'  # "Пароль" на форме входа
