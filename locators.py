@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 
 
 class TestLocators:
-    BUTTON_LOG_IN_ON_HOME_PAGE = By.XPATH, './/button[text() = "Войти в аккаунт"]'  # "Войти в аккаунт" на главной
+    BUTTON_LOG_IN_ON_HOME_PAGE = By.XPATH, './/button[@class = "button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_large__G21Vg"]'  # "Войти в аккаунт" на главной
     BUTTON_PERSONAL_ACCOUNT_ON_HOME_PAGE = By.XPATH, './/a[@href = "/account"]'  # "Личный кабинет" на главной
 
     INPUT_EMAIL_ON_LOGIN_FORM = By.XPATH, './/input[@type="text"]'  # "Email" на форме входа
@@ -25,3 +25,8 @@ class TestLocators:
     ELEMENTS_PERSONAL_ACCOUNT = By.XPATH, './/ul[@class = "Account_list__3KQQf mb-20"]'  # Меню в Личном кабинете
     WINDOW_PERSONAL_ACCOUNT = By.CLASS_NAME, 'Account_account__vgk_w'  # Окно Личного кабинета
     BUTTON_LOG_OUT_ON_PERSONAL_ACCOUNT = By.XPATH, './/button[text()="Выход"]'  # Кнопка выход в личном кабинете
+
+    SELECTOR_SAUCES = By.XPATH, './/span[text()="Соусы"]' # Раздел конструктора "Соусы"
+    SELECTOR_FILLINGS = By.XPATH, './/span[text()="Начинки"]' # Раздел конструктора "Начинки"
+    SELECTOR_BUNS = By.XPATH, './/span[text()="Булки"]' # Раздел конструктора "Булки"
+    WINDOW_CONSTRUCTOR = By.XPATH, './/section[@class = "BurgerIngredients_ingredients__1N8v2"]' #Окно с конструктором
