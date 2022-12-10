@@ -30,6 +30,7 @@ class TestLocators:
     BUTTON_LOG_OUT_ON_PERSONAL_ACCOUNT = By.XPATH, './/button[text()="Выход"]'  # Кнопка выход в личном кабинете
 
     SELECTOR_SAUCES = By.XPATH, './/span[text()="Соусы"]' # Раздел конструктора "Соусы"
+    CURRENT_SELECTOR_ON_CONSTRUCTOR = By.XPATH, './/div[contains(@class, "tab_tab_type_current__2BEPc")]/span' # Выбранный раздел конструктора
     SELECTOR_FILLINGS = By.XPATH, './/span[text()="Начинки"]' # Раздел конструктора "Начинки"
     SELECTOR_BUNS = By.XPATH, './/span[text()="Булки"]' # Раздел конструктора "Булки"
     WINDOW_CONSTRUCTOR = By.XPATH, './/section[@class = "BurgerIngredients_ingredients__1N8v2"]' #Окно с конструктором
