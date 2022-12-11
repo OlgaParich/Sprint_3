@@ -5,7 +5,7 @@ from locators import TestLocators
 
 
 def test_registrations(work_browser):
-    work_browser.find_element(*TestLocators.BUTTON_LOG_IN_ON_HOME_PAGE).click()
+    work_browser.find_element(*TestLocators.BUTTON_ON_HOME_PAGE).click()
     work_browser.find_element(*TestLocators.LINK_REGISTER_ON_LOGIN_FORM).click()
     work_browser.find_element(*TestLocators.INPUT_NAME_ON_REGISTRATION_FORM).send_keys('Ololo')
     work_browser.find_element(*TestLocators.INPUT_EMAIL_ON_REGISTRATION_FORM).send_keys('ololo6@ya.ru')
@@ -17,7 +17,7 @@ def test_registrations(work_browser):
 
 
 def test_incorrect_password(work_browser):
-    work_browser.find_element(*TestLocators.BUTTON_LOG_IN_ON_HOME_PAGE).click()
+    work_browser.find_element(*TestLocators.BUTTON_ON_HOME_PAGE).click()
     work_browser.find_element(*TestLocators.LINK_REGISTER_ON_LOGIN_FORM).click()
     work_browser.find_element(*TestLocators.INPUT_NAME_ON_REGISTRATION_FORM).send_keys('Ololo')
     work_browser.find_element(*TestLocators.INPUT_EMAIL_ON_REGISTRATION_FORM).send_keys('ololo@ya.ru')

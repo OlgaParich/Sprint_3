@@ -11,7 +11,6 @@ def test_switching_from_account_by_constructor(authorization):
     assert authorization.find_element(*TestLocators.WINDOW_CONSTRUCTOR)
 
 
-
 def test_switching_from_account_by_logo(authorization):
     authorization.find_element(*TestLocators.BUTTON_PERSONAL_ACCOUNT_ON_HOME_PAGE).click()
     WebDriverWait(authorization, 3).until(
